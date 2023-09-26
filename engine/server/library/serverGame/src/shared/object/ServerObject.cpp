@@ -3154,7 +3154,8 @@ void ServerObject::createFarNetworkUpdateVolume(float const overrideVal)
 	{
 		const ServerObjectTemplate * myTemplate = safe_cast<const ServerObjectTemplate *>(getObjectTemplate());
 		UNREF(myTemplate);
-		float const radius_far = overrideVal != 0.0f ? overrideVal : getFarNetworkUpdateRadius();
+		//float const radius_far = overrideVal != 0.0f ? overrideVal : getFarNetworkUpdateRadius();
+		int const radius_far = 1024;
 		if (radius_far > 0)
 		{
 			if (ServerWorld::isSpaceScene())
