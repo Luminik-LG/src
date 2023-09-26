@@ -16,3 +16,4 @@ build.log
 *.phprj
 *.project
 *.workspace
+/.vs
